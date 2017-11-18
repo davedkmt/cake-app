@@ -19,12 +19,17 @@ app.set("view engine", "handlebars");
 var mysql = require("mysql");
 var connection;
 
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+
 connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
   database: "cake_db"
 });
+}
 
 connection.connect(function(err) {
   if (err) {
