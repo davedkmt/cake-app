@@ -7,3 +7,5 @@
 * Each cake in the waiting area also has an order it! button.
 
 * The app will store every cake in a database, whether ordered or not or not.
+
+Link to the app: https://radiant-meadow-14563.herokuapp.com/
